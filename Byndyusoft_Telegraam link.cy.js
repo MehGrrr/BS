@@ -1,6 +1,6 @@
 describe('Check the Telegram link', () => {
 
-  it('Google search', () => {
+  it('Find-open-check link', () => {
     cy.visit('https://www.google.ru/')  
     cy.get('textarea[type="search"]').click().type('Byndyusoft{enter}')
     cy.get('#search a').first().invoke('removeAttr', 'target').click()
