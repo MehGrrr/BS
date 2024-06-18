@@ -14,7 +14,7 @@ describe("Byndyusoft test task", () => {
       cy.origin(url, () => {
         cy.get(".knowMore__container > .btn").click();
         cy.get(".popup-callback__contacts-tg")
-          .should("have.attr", "href")
+          .should("have.attr", "href") // Проверка наличия ссылки в поп апе
           .and("eq", "https://t.me/alexanderbyndyu");
       });
     });
