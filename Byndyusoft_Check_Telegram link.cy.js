@@ -14,7 +14,7 @@ describe("Byndyusoft test task", () => {
       cy.origin(url, () => {
         cy.get(".knowMore__container > .btn").click();
         cy.get(".popup-callback__contacts-tg").invoke("attr", "href");
-      }).should("eq", "http://t.me/alexanderbyndyu");
+      }).should("eq", "https://t.me/alexanderbyndyu"); //в ТЗ дают ссылку на телеграм https://t.me/alexanderbyndyu - защищенное соединение, на сайте же ссылка http
     });
   });
 });
